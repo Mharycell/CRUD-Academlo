@@ -57,7 +57,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-
+/* 
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -67,4 +67,4 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
-}
+} */

@@ -10,7 +10,7 @@ export default class Modal extends Component {
 					<div style={style.wrapper}>
 						<div style={style.window}>
 							<button onClick={toggle} style={style.closeButtom}>
-								X
+								<i className="fa-regular fa-circle-xmark"></i>
 							</button>
 							<div>{children}</div>
 						</div>

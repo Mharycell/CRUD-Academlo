@@ -1,12 +1,19 @@
 .App{
   text-align: center;
   padding: 70px;
+  z-index: 10;
 }
 
 .App form{
   text-align: left;
   margin: 0 auto;
   width: 250px;
+}
+
+.App .header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .input-container{
@@ -26,13 +33,46 @@
 
 button{
   padding: 10px;
-  background: lightcoral;
+  background: white;
   border: none;
   border-radius: 10px;
 
+}
+
+.fa-circle-xmark{
+  font-size: 16px;
 }
 
 button.submit{
   margin-right: 10px;
 }
 
+/* UsersList */
+
+.list-content{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: rosybrown;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+ul{
+  list-style: none;
+}
+
+.btns button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+    margin: 10px;
+}
+
+.btns .delete{
+  background-color: rgb(228, 80, 80);
+}
