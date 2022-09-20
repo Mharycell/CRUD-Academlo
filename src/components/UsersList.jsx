@@ -1,6 +1,10 @@
+import axios from 'axios'
 import React from 'react'
 
 const UsersList = ({ users, toggle, selectUser, getUsers }) => {
+	const deleteUser = (id) => {
+		axios.delete(`https://users-crud1.herokuapp.com/users/${id}/`).then(() => getUsers())
+	}
 	return (
 		<div>
 			<h1>All users</h1>
@@ -20,7 +24,7 @@ const UsersList = ({ users, toggle, selectUser, getUsers }) => {
 								<button onClick={() => selectUser(user)}>
 									<i className='fa-solid fa-user-pen'></i>
 								</button>
-								<button className='delete'>
+								<button className='delete' onClick={() => deleteUser(user.id)}>
 									<i className='fa-solid fa-trash'></i>
 								</button>
 							</div>

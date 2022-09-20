@@ -24,6 +24,8 @@ function App() {
 		toggle()
 	}
 
+	const deselectUser = () => setEditSelected(null)
+
 	const toggle = () => {
 		setActive(!active)
 	}
@@ -37,7 +39,12 @@ function App() {
 				<span></span>
 			</div>
 			<Modal active={active} toggle={toggle}>
-				<UsersForm getUsers={getUsers} toggle={toggle} editSelected={editSelected} />
+				<UsersForm
+					getUsers={getUsers}
+					toggle={toggle}
+					editSelected={editSelected}
+					deselectUser={deselectUser}
+				/>
 			</Modal>
 			<UsersList users={users} selectUser={selectUser} toggle={toggle} getUsers={getUsers} />
 		</div>
