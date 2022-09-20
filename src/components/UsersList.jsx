@@ -11,6 +11,7 @@ const UsersList = ({ users }) => {
 							<div className='info'>
 								<h2>{user.last_name} {user.first_name}</h2>						
 								<p>{user.email}</p>
+								<i class="fa-regular fa-envelope"></i>
 								<p>{user.birthday}</p>
 							</div>	
 
