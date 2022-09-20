@@ -14,11 +14,12 @@ const UsersList = ({ users, toggle, selectUser, getUsers }) => {
 						<div className='list-content'>
 							<div className='info'>
 								<h2>
-									{user.last_name} {user.first_name}
+								<i className="fa-solid fa-user"></i> {"   "}
+								{user.last_name} {user.first_name} 
 								</h2>
-								<p>{user.email}</p>
-								<i class="fa-regular fa-envelope"></i>
-								<p>{user.birthday}</p>
+								<p><i className="fa-regular fa-envelope"></i>{"     "} {user.email}</p> 
+								
+								<p><i className="fa-solid fa-cake-candles"></i>{"     "} {user.birthday}</p> 
 							</div>
 
 							<div className='btns'>
